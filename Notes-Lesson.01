@@ -1,0 +1,49 @@
+print 7 + 3 * 4 + 17
+print 52 * 3 + 12 * 9
+print 52 * (3 + 12) * 9
+print 365 * 24 * 60 * 60
+
+
+First Programming Quiz:
+
+# Write a Python program that prints out the number of minutes in seven weeks.
+# Click the "Run" button below to try running your code and see the output,
+# and click "Submit" to submit your answer.
+
+print 7 * 7 * 24 * 60
+
+
+-------
+
+
+Backus-Naur Form 
+Left Side <non-terminal> "arrow" replacement
+Terminal's on the right side and finish.
+
+Derivation
+
+------
+
+Python Grammar for Arithmetic Expressions:
+Expression -> Expression Operator Expression
+Expression -> Number
+Operator -> +
+Operator -> *
+Number -> 0, 1, 2, ...
+Expression -> (Expression)
+
+------
+
+Variables
+Assignement Statement: Name = Expression
+Variables start with a letter or a number.
+
+speed_of_light = 299792458
+billionth = 1.0 / 1000000000
+cycles_per_second = 2700000000.0
+print speed_of_light / cycles_per_second
+
+
+var = var - 1
+The expression is parsed prior to the assignment of the variable.
+= means assignment.
