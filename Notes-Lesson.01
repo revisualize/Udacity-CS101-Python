@@ -47,3 +47,32 @@ print speed_of_light / cycles_per_second
 var = var - 1
 The expression is parsed prior to the assignment of the variable.
 = means assignment.
+
+If you use a variable that has not been previously assigned Python does 
+not default the value of that variable to null or 0. This is due to the
+previous mention regarding the assignment is parsed prior to the actual
+assignmemnt of that variable. Example var = var - 1 is an error without
+first assigning var = 0 or any other number.
+
+age = 21
+days_in_year = 365
+print age * days_in_year
+# LOL! I wrote the same code for this Quiz without looking at the code
+# prior to seeing the answer. Minus the .25 added to the end of the
+# days_in_year variable.
+
+
+------
+
+Strings are a siquence of characters surrounded by quotes.
+Strings with + means concatination.
+
+Indexing Strings
+<string>[<expression>]
+Joseph[0] outputs J
+Joseph[2 + 3] outputs p
+
+Selecting Sub-Sequences
+<string>[<start_expression> : <stop_expression>]
+Generates the characters from the reference of start_expression
+to the position of stop_expression minus one.
