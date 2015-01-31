@@ -120,3 +120,7 @@ look_up = "zip"
 first_instance = text.find(look_up)
 second_instance = text.find(look_up, first_instance + 1)
 print second_instance
+
+------
+
+print str(x + 0.5)[:str(x + 0.5).find('.')]
