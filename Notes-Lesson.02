@@ -1,0 +1,75 @@
+Procedures and Control
+
+Inputs -> Procedure -> Outputs
+'''
+I have later found out that the instructor is
+stating procedures when they actually mean 
+function. Functions are free to return a value 
+or not. If they do not, None is returned 
+automatically. Functions that return no value 
+are called "procedures".
+'''
+
+def name(parameters): #multiple parameters are seperated by ,'s
+    code #note the spaces are important.
+
+
+def sum(a, b):
+    a = a + b
+
+print sum(1, 1)
+# Result is None
+
+
+def sum(a, b):
+    a = a + b
+
+a = 2
+b = 2
+print sum(a, b)
+# Still returns None
+# "Procedures" pass the !value! of the variable.
+
+
+------
+
+def square(s):
+    s = s * s
+    return s
+# After watching the answer I realized that I was doing too much work.
+
+------
+
+def sum3(n1, n2, n3):
+    return n1 + n2 + n3
+
+------
+
+def abbaize(s1, s2):
+    return s1 + s2 * 2 + s1
+
+#**`You passed 3 out of 3 test cases`** 
+
+------
+
+# Gold Star QUIZ
+
+def find_second(s, search):
+    return s.find(search, s.find(search)+1)
+
+# **`You passed 3 out of 3 test cases`**  
+
+------
+
+Decisions:
+<
+>
+<=
+!=
+==
+# Think Math
+27 > 16 # Returns True as a Bool Value.
+27 < 3 # Returns False
+
+= assigns values
+== for comparison
