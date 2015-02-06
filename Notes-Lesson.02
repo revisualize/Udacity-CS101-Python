@@ -73,3 +73,119 @@ Decisions:
 
 = assigns values
 == for comparison
+
+------
+
+if expression:
+   block
+
+def absolute(x):
+    if x < 0:
+        x = -x
+    return x
+# Again note that spaces are critical for Python.
+
+def bigger(n1, n2):
+    if n1 > n2:
+        return n1
+    if n1 < n2:
+        return n2
+    if n1 == n2:
+        return n1
+
+#**`You passed 3 out of 3 test cases`**  
+# Note the course did not cover else prior to this Quiz
+
+------
+
+def is_friend(name):
+    return name[0] == 'D'
+
+------
+
+def is_friend(name):
+    if name[0] == 'D':
+        return True
+    elif name[0] == 'N':
+        return True
+    else:
+        return False
+
+#Note: I the course has not covered elif yet, I looked it up.
+#**`You passed 3 out of 3 test cases`**  
+
+------
+
+OR
+
+Expr OR Expr
+If the first value is True the second expression is not evaluated.
+If the first value is False the second expression is evaluated.
+
+------
+
+#Double Star Quiz
+
+def bigger(n1, n2):
+    if n1 > n2:
+        return n1
+    if n1 < n2:
+        return n2
+    if n1 == n2:
+        return n1
+
+def biggest(n1, n2, n3):
+    return bigger(bigger(n1, n2), n3)
+
+# **`You passed 7 out of 7 test cases`**  
+
+# ... grrr.. there is a built in operator for this: max(n1, n2, n3)
+
+------
+
+LOOPS with WHILE
+
+while <test_expression>:
+    code
+
+while 1 == 1:
+    print "INFINATE LOOP!!!"
+
+i = 0
+while i < 10:
+   print i
+   i = i+1
+# This code prints: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 and stops.
+
+------
+
+def print_numbers(n):
+    i = 1
+    while i <= n:
+        print i
+        i = i+1
+
+------
+
+def factorial(n):
+    i = 1
+    x = 1
+    while i > 0:
+        x = x * i
+        i = i + 1
+# This code errors out.
+# I was thinking about the problem wrong.
+# factorial(n) = n * (n-1) * (n-2) * ... * 3 * 2 * 1
+# I played with the in browser code and got this:
+
+def factorial(n):
+    x = 1
+    while n >= 1:
+        x = x * n
+        n = n-1
+    return x
+
+# **`You passed 5 out of 5 test cases`**  
+# This problem took me about 20 minutes
+
+------
