@@ -199,3 +199,70 @@ def factorial(n):
         i = i + 1
     return x
 ------
+
+while <test_expression>:
+    <code>
+    if <expression>:
+        <code>
+        break #This will cause the while to half functioning
+<more code>
+
+------
+
+Multiple Assignment of Varialbles:
+
+a, b, c, d = 1, 2, 3, 4 
+
+# Note the comma-delimited values.
+This results in:
+a = 1
+b = 2
+c = 3
+d = 4
+
+
+# My own example of multiple variable assignment
+
+def split_name(fullname):
+    search = " "
+    first = fullname[:fullname.find(search)]
+    last = fullname[fullname.find(search)+1:]
+    # If you don't add the +1 you get the position of the space
+    # and end up including the space in the last.
+    return first, last
+
+fullname = "Atom Ant"
+f_name, l_name = split_name(fullname)
+print "First Name is " + f_name
+print "Last Name is " + l_name
+print "Up and at'em it's " + f_name + " " + l_name + "!"
+
+------
+
+# Quiz
+
+s, t = t, s
+# Swaps the values.
+
+# CORRECT!
+# Due to the fact that the right is parsed prior to the left
+# of the assignment
+
+------
+
+# QUIZ
+
+    if start_link != -1: 
+        <block_code>
+    else:
+        return None, 0
+
+**`You passed 2 out of 2 test cases`**
+
+# Udacity Answer:
+    if start_link == -1:
+        return None, 0
+    <block_code>
+
+# I think Udacity's answer forms cleaner code by just returning out of the function.
+------
