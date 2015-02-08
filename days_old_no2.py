@@ -13,8 +13,10 @@ days there are left from that date until 31 Dec.
 '''
 
 
-daysOfMonths = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-
+daysOfMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+daysOfYear = 365
+daysOfLeap = 366
+    
 def isLeapYear(year):
     ##
     # Your code here. Return True or False
@@ -39,9 +41,7 @@ def isLeapYear(year):
         return True
 
 def daysBetweenDates(y1, m1, d1, y2, m2, d2):
-    ##
-    # Your code here.
-    ##
+
     return days
 
 def extraFunction(???):
